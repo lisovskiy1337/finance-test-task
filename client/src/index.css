@@ -1,13 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background: url("../public/images/subtle-prism.svg") no-repeat center center
+    fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  border-radius: 0 0 0.5rem 0.5rem;
 }
+
+.ticker:hover .btn {
+  opacity: 1;
+}
+
+form > input {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+form > button {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* .ticker > div > svg {
+  width: 40px;
+  height: 30px;
+  display: block;
+} */
