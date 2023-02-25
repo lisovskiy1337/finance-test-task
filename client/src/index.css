@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../public/images/subtle-prism.svg") no-repeat center center
     fixed;
 }
@@ -23,9 +23,3 @@ form > input {
 form > button {
     border-radius: 0 0.5rem 0.5rem 0;
 }
-
-/* .ticker > div > svg {
-  width: 40px;
-  height: 30px;
-  display: block;
-} */
